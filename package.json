@@ -1,0 +1,47 @@
+{
+  "name": "guzman-y-gomez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "sls deploy",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "moduleNameMapper": {
+      "^cliui(.*)$": "<rootDir>/node_modules/babel-jest/@^config/preset-env/empty.js"
+    },
+    "preset": "jest",
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.json"
+      }
+    }
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1659.0",
+    "serverless": "^4.1.0",
+    "serverless-offline": "^13.6.0",
+    "typescript": "^5.5.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.141",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.11",
+    "@types/uuid": "^10.0.0",
+    "aws-lambda": "^1.0.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.2",
+    "uuid": "^9.0.0"
+  }
+}
